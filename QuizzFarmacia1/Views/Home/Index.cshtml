@@ -1,0 +1,35 @@
+﻿@model QuizzFarmacia1.Models.empleados
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+   
+    <meta name="viewport" content="width=device-width" />
+   
+
+    <title>Index</title>
+   
+ <link rel="stylesheet" type="text/css" href="~/Content/StyleSheet1.css"/>
+ 
+</head>
+<body>
+   
+ <div class="NumeroEmpleado">
+        <section class="NumeroEmpleado"><br>
+           
+           @using (Html.BeginForm())
+           {
+           <h1> INGRESE EL NUMERO DE USUARIO </h1>
+           <p> @Html.TextBoxFor(reg => reg.NumEmpleado)</p>
+               <input type="submit" value="Enviar"/>
+               <img src="/content/Pictures/15.jpg">
+}
+        </section>
+    </div>
+</body>
+</html>
